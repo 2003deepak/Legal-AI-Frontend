@@ -459,7 +459,7 @@ const Case = () => {
     addMessage({ type: "status", message: "Submitting case details...", icon: faSpinner, title: "Initializing" })
 
     try {
-      const response = await fetch(`${apiUrl}/user/start-case`, {
+      const response = await fetch(`${apiUrl}/api/gemini/start-case`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
