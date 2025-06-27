@@ -43,7 +43,7 @@ const Signup = () => {
 
       try {
         const resp = await axios.post(
-          `${backendURL}/auth/signup`,
+          `${backendURL}/api/auth/signup`,
           { name, email, password }
         );
 
